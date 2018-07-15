@@ -1,5 +1,4 @@
 
-document.body.style.border = "5px solid red";
 walk(document.body);
 
 function walk(node) 
