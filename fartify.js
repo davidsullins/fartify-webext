@@ -45,6 +45,10 @@ function handleText(textNode)
 	v = v.replace(/\bApologized\b/g, "Farted");
 	v = v.replace(/\bapologizing\b/g, "farting");
 	v = v.replace(/\bApologizing\b/g, "Farting");
+	v = v.replace(/\bapology\b/g, "fart");
+	v = v.replace(/\bApology\b/g, "Fart");
+	v = v.replace(/\bapologies\b/g, "farts");
+	v = v.replace(/\bApologies\b/g, "Farts");
 	
 	textNode.nodeValue = v;
 }
