@@ -14,16 +14,16 @@
          "activeTab"
   ],
 
-  "browser_action": {
+  "page_action": {
           "default_icon": "icons/fart-32.png",
-          "default_title": "Fartify"
+          "default_title": "Fartify",
+          "show_matches": ["*://*.slack.com/*"]
   },
 
-  "content_scripts": [
+
+  "background": 
     {
-      "matches": ["*://*.slack.com/*"],
-      "js": ["fartify.js"]
+      "scripts": ["background.js"]
     }
-  ]
 
 }
