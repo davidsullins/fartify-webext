@@ -1,0 +1,29 @@
+{
+
+  "manifest_version": 2,
+  "name": "Fartify",
+  "version": "1.0",
+
+  "description": "Changes apologies to farts in Slack",
+
+  "icons": {
+    "48": "icons/fart-48.png"
+  },
+
+  "permissions": [ 
+         "activeTab"
+  ],
+
+  "browser_action": {
+          "default_icon": "icons/fart-32.png",
+          "default_title": "Fartify"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.slack.com/*"],
+      "js": ["fartify.js"]
+    }
+  ]
+
+}
