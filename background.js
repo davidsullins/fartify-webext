@@ -3,8 +3,8 @@ function reportExecuteScriptError(error) {
 }
 
 function handleClick() {
-        browser.tabs.executeScript({file: "/fartify.js"}).catch(reportExecuteScriptError);
+        chrome.tabs.executeScript({file: "/fartify.js"}).catch(reportExecuteScriptError);
 }
 
-browser.pageAction.onClicked.addListener(handleClick);
+chrome.browserAction.onClicked.addListener(handleClick);
 
