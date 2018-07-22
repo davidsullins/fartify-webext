@@ -1,4 +1,5 @@
-walk(document.body);
+// re-fartify at regular intervals
+setInterval(walk, 1000, document.body);
 
 function walk(node) {
 	// I stole this function from here:
