@@ -1,29 +1,27 @@
 {
-
   "manifest_version": 2,
   "name": "Fartify",
-  "version": "1.0",
-
+  "version": "1.1",
   "description": "Changes apologies to farts in Slack",
-
+  "author": "David Sullins",
   "icons": {
     "48": "icons/fart-48.png"
   },
-
-  "permissions": [ 
-         "activeTab"
+  "permissions": [
+    "activeTab"
   ],
-
   "browser_action": {
-          "default_icon": "icons/fart-32.png",
-          "default_title": "Fartify"
+    "default_icon": "icons/fart-32.png",
+    "default_title": "Fartify"
   },
-
   "content_scripts": [
     {
-      "matches": ["*://*.slack.com/*"],
-      "js": ["fartify.js"]
+      "matches": [
+        "*://*.slack.com/*"
+      ],
+      "js": [
+        "fartify.js"
+      ]
     }
   ]
-
 }
