@@ -10,10 +10,6 @@
   "permissions": [
     "activeTab"
   ],
-  "browser_action": {
-    "default_icon": "icons/fart-32.png",
-    "default_title": "Fartify"
-  },
   "content_scripts": [
     {
       "matches": [
